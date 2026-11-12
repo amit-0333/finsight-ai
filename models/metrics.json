@@ -1,0 +1,84 @@
+{
+  "data_source": "Synthetic data calibrated to TransUnion CIBIL published aggregates",
+  "rows_used": 100000,
+  "sklearn_version": "1.6.1",
+  "best_params": {
+    "logistic": {
+      "model__C": "0.0745934328572655"
+    },
+    "tree": {
+      "model__min_samples_leaf": "50",
+      "model__max_depth": "5"
+    },
+    "boosting": {
+      "model__min_samples_leaf": "50",
+      "model__max_leaf_nodes": "15",
+      "model__max_iter": "400",
+      "model__max_depth": "3",
+      "model__learning_rate": "0.05",
+      "model__l2_regularization": "1"
+    }
+  },
+  "models": {
+    "logistic": {
+      "roc_auc_test": 0.8712,
+      "roc_auc_train": 0.8747,
+      "train_test_gap": 0.0034,
+      "accuracy": 0.7875,
+      "precision": 0.7737,
+      "recall": 0.7456,
+      "brier": 0.1456,
+      "confusion_matrix": [
+        [
+          6784,
+          1471
+        ],
+        [
+          1716,
+          5030
+        ]
+      ]
+    },
+    "tree": {
+      "roc_auc_test": 0.8578,
+      "roc_auc_train": 0.8642,
+      "train_test_gap": 0.0063,
+      "accuracy": 0.7805,
+      "precision": 0.735,
+      "recall": 0.8005,
+      "brier": 0.1506,
+      "confusion_matrix": [
+        [
+          6308,
+          1947
+        ],
+        [
+          1346,
+          5400
+        ]
+      ]
+    },
+    "boosting": {
+      "roc_auc_test": 0.8866,
+      "roc_auc_train": 0.8937,
+      "train_test_gap": 0.0072,
+      "accuracy": 0.8018,
+      "precision": 0.7748,
+      "recall": 0.7885,
+      "brier": 0.136,
+      "confusion_matrix": [
+        [
+          6709,
+          1546
+        ],
+        [
+          1427,
+          5319
+        ]
+      ]
+    }
+  },
+  "logistic_calibrated_brier": 0.1455,
+  "boosting_auc_gain_over_logistic": 0.0154,
+  "shipped_model": "logistic"
+}

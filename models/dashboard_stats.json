@@ -1,0 +1,212 @@
+{
+  "data_source": "Synthetic data calibrated to TransUnion CIBIL published aggregates",
+  "rows_used": 100000,
+  "overall_approval_rate": 0.4497,
+  "segments": {
+    "income_band": {
+      "<15k": {
+        "approval_rate": 0.1055,
+        "n": 11936
+      },
+      "15-25k": {
+        "approval_rate": 0.2478,
+        "n": 22011
+      },
+      "25-40k": {
+        "approval_rate": 0.4677,
+        "n": 27058
+      },
+      "40-70k": {
+        "approval_rate": 0.6073,
+        "n": 24969
+      },
+      "70k+": {
+        "approval_rate": 0.7443,
+        "n": 14026
+      }
+    },
+    "cibil_tier": {
+      "Near prime": {
+        "approval_rate": 0.2816,
+        "n": 17429
+      },
+      "New-to-credit": {
+        "approval_rate": 0.2554,
+        "n": 12854
+      },
+      "Prime": {
+        "approval_rate": 0.63,
+        "n": 28758
+      },
+      "Prime plus": {
+        "approval_rate": 0.778,
+        "n": 17429
+      },
+      "Subprime": {
+        "approval_rate": 0.0425,
+        "n": 18301
+      },
+      "Super prime": {
+        "approval_rate": 0.8269,
+        "n": 5229
+      }
+    },
+    "employment_type": {
+      "salaried": {
+        "approval_rate": 0.4425,
+        "n": 73416
+      },
+      "self_employed": {
+        "approval_rate": 0.4696,
+        "n": 26584
+      }
+    },
+    "foir_bucket": {
+      "<20%": {
+        "approval_rate": 0.5104,
+        "n": 43537
+      },
+      "20-35%": {
+        "approval_rate": 0.4416,
+        "n": 34247
+      },
+      "35-50%": {
+        "approval_rate": 0.3997,
+        "n": 13992
+      },
+      ">50%": {
+        "approval_rate": 0.2472,
+        "n": 8224
+      }
+    },
+    "city_tier": {
+      "Metro": {
+        "approval_rate": 0.5248,
+        "n": 27104
+      },
+      "Rural": {
+        "approval_rate": 0.368,
+        "n": 21974
+      },
+      "Semi-urban": {
+        "approval_rate": 0.4215,
+        "n": 30938
+      },
+      "Urban": {
+        "approval_rate": 0.4814,
+        "n": 19984
+      }
+    },
+    "age_band": {
+      "21-25": {
+        "approval_rate": 0.2212,
+        "n": 20905
+      },
+      "26-35": {
+        "approval_rate": 0.4082,
+        "n": 37924
+      },
+      "36-45": {
+        "approval_rate": 0.5798,
+        "n": 24206
+      },
+      "46-55": {
+        "approval_rate": 0.6775,
+        "n": 11929
+      },
+      "56+": {
+        "approval_rate": 0.5459,
+        "n": 5036
+      }
+    }
+  },
+  "fairness": {
+    "gender": {
+      "Female": {
+        "approval_rate": 0.4516,
+        "n": 30072
+      },
+      "Male": {
+        "approval_rate": 0.4489,
+        "n": 69928
+      }
+    },
+    "city_tier": {
+      "Metro": {
+        "approval_rate": 0.5248,
+        "n": 27104
+      },
+      "Rural": {
+        "approval_rate": 0.368,
+        "n": 21974
+      },
+      "Semi-urban": {
+        "approval_rate": 0.4215,
+        "n": 30938
+      },
+      "Urban": {
+        "approval_rate": 0.4814,
+        "n": 19984
+      }
+    },
+    "age_band": {
+      "21-25": {
+        "approval_rate": 0.2212,
+        "n": 20905
+      },
+      "26-35": {
+        "approval_rate": 0.4082,
+        "n": 37924
+      },
+      "36-45": {
+        "approval_rate": 0.5798,
+        "n": 24206
+      },
+      "46-55": {
+        "approval_rate": 0.6775,
+        "n": 11929
+      },
+      "56+": {
+        "approval_rate": 0.5459,
+        "n": 5036
+      }
+    }
+  },
+  "rejection_reasons": {
+    "Income below lender requirement": 0.2715,
+    "Recent missed payments": 0.1976,
+    "Incomplete documents": 0.1302,
+    "Low credit score": 0.1085,
+    "High credit utilisation": 0.0648,
+    "High EMI burden (FOIR)": 0.0462,
+    "Other / lender policy": 0.0441,
+    "Limited credit history": 0.0369,
+    "Short or unstable employment history": 0.0316,
+    "Tenure extends beyond retirement age": 0.0284,
+    "Loan amount too high for income": 0.024,
+    "Too many recent credit enquiries": 0.0119,
+    "Short time at current residence": 0.0041,
+    "Too many existing loans": 0.0002
+  },
+  "permutation_importance": {
+    "cibil_score": 0.0903,
+    "foir_post_loan": 0.045,
+    "is_new_to_credit": 0.0329,
+    "missed_payments_12m": 0.0313,
+    "monthly_income": 0.0307,
+    "documents_complete": 0.0219,
+    "foir_current": 0.0099,
+    "credit_utilisation_pct": 0.0067,
+    "employment_years": 0.002,
+    "recent_enquiries_6m": 0.0019,
+    "existing_emi_monthly": 0.0009,
+    "loan_to_monthly_income": 0.0008,
+    "loan_amount_requested": 0.0006,
+    "residence_years": 0.0005,
+    "loan_tenure_months": 0.0003,
+    "existing_loans_count": 0.0001,
+    "credit_age_years": -0.0,
+    "employment_type": -0.0
+  },
+  "tree_rules_text": "|--- cibil_score <= 750.50\n|   |--- cibil_score <= 694.50\n|   |   |--- cibil_score <= 671.50\n|   |   |   |--- cibil_score <= 655.50\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- cibil_score >  655.50\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |--- cibil_score >  671.50\n|   |   |   |--- monthly_income <= 29750.00\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- monthly_income >  29750.00\n|   |   |   |   |--- truncated branch of depth 2\n|   |--- cibil_score >  694.50\n|   |   |--- monthly_income <= 23750.00\n|   |   |   |--- employment_years <= 2.25\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- employment_years >  2.25\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |--- monthly_income >  23750.00\n|   |   |   |--- documents_complete <= 0.50\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- documents_complete >  0.50\n|   |   |   |   |--- truncated branch of depth 2\n|--- cibil_score >  750.50\n|   |--- monthly_income <= 23750.00\n|   |   |--- documents_complete <= 0.50\n|   |   |   |--- monthly_income <= 18750.00\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- monthly_income >  18750.00\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |--- documents_complete >  0.50\n|   |   |   |--- foir_post_loan <= 0.53\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- foir_post_loan >  0.53\n|   |   |   |   |--- truncated branch of depth 2\n|   |--- monthly_income >  23750.00\n|   |   |--- documents_complete <= 0.50\n|   |   |   |--- foir_post_loan <= 0.53\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- foir_post_loan >  0.53\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |--- documents_complete >  0.50\n|   |   |   |--- foir_post_loan <= 0.54\n|   |   |   |   |--- truncated branch of depth 2\n|   |   |   |--- foir_post_loan >  0.54\n|   |   |   |   |--- truncated branch of depth 2\n"
+}
