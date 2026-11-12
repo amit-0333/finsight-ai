@@ -4,7 +4,7 @@
 
 A prototype for first-time and small borrowers in India. It estimates the chance that a personal-loan application is approved, explains the main factors in plain language (English and Hindi), suggests realistic steps to improve, and lets the borrower see the estimate change live. A second page gives lenders a view of what drives approvals and rejections.
 
-> **Live demo:** `<PASTE-YOUR-STREAMLIT-URL-HERE>`
+> **Live demo:** `updated soon`
 >
 > **Estimate only - not financial advice or a lending decision.**
 > All numbers come from **synthetic data** (calibrated to TransUnion CIBIL published aggregates). They are not real-world performance.
